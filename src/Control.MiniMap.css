@@ -37,7 +37,7 @@
 }
 
 .leaflet-control-minimap-toggle-display {
-	background-image: url(../images/minimap.svg);
+	background-image: url(images/minimap.svg);
 	background-size: cover;
 	position: absolute;
 	border-radius: 3px 0 0
@@ -48,7 +48,7 @@
 }
 
 .leaflet-control-minimap-close-display{
-	background-image: url(../images/minimap-close.svg);
+	background-image: url(images/minimap-close.svg);
 	background-size: cover;
 	position: absolute;
 	border-radius: 3px 0 0
