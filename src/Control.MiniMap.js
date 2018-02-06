@@ -133,7 +133,7 @@
         _addToggleButton: function () {
             this._toggleDisplayButton = this.options.toggleDisplay ? this._createButton(
                 '', this._toggleButtonInitialTitleText(), ('leaflet-control-minimap-toggle-display leaflet-control-minimap-toggle-display-' +
-                this.options.position), this._container, this._toggleDisplayButtonClicked, this) : undefined;
+                    this.options.position), this._container, this._toggleDisplayButtonClicked, this) : undefined;
 
             this._toggleDisplayButton.style.width = this.options.collapsedWidth + 'px';
             this._toggleDisplayButton.style.height = this.options.collapsedHeight + 'px';
@@ -184,6 +184,7 @@
 
         _closeDisplayButtonClicked: function () {
             this._container.style.display = "none";
+            if(this.options.closeCallback) this.options.closeCallback();
         },
 
         _setDisplay: function (minimize) {
